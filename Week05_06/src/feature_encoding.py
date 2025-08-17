@@ -22,8 +22,8 @@ class VariableType(str, Enum):
 class NominalEncodingStrategy(FeatureEncodingStrategy):
     def __init__(self, nominal_columns):
         self.nominal_columns = nominal_columns
-        self.encoder_dicts = {}
-        os.makedirs('artifacts/encode', exist_ok=True)
+        self.encoder_dicts = {}  # To save the ecoded stuff in dictionary type
+        os.makedirs('artifacts/encode', exist_ok=True) # To store the encoded stuff in a file in json format
 
     def encode(self,df):
         for column in self.nominal_columns:
