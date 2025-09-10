@@ -60,8 +60,8 @@ class GenderImputer:
     def impute(self, df):
         missing_gender_index = df['Gender'].isnull()
         for idx in df[missing_gender_index].index:
-            first_name = df.loc[idx, 'Firstname']  # Get column with Firstname
-            last_name = df.loc[idx, 'Lastname'] # Get column with Lastname
+            first_name = df.loc[idx, 'Firstname']
+            last_name = df.loc[idx, 'Lastname']
             gender = self._predict_gender(first_name, last_name)
             
             if gender:
@@ -93,16 +93,7 @@ class FillMissingValuesStrategy(MissingValueHandlingStrategy):
 
     def handle(self, df):
         if self.is_custom_imputer:
-            return self.custom_imputer.impute(df) # if custom imputer, call impute function which has been written before for gender
-        df[self.relevant_column] = df[self.relevant_column].fillna(df[self.relevant_column].mean()) # mean is given to null values if not is customer imputer
+            return self.custom_imputer.impute(df)
+        df[self.relevant_column] = df[self.relevant_column].fillna(df[self.relevant_column].mean())
         logging.info(f'Missing values filled in column {self.relevant_column}.')
         return df
-    
-
-"""
-23rd
-
--   Model & Prediction Pipelines
--   ZenML & MLflow
-
-"""
