@@ -10,3 +10,4 @@ Week08/.airflow
 *.pyc
 *.pyo
 __pycache__/
+.DS_Store
