@@ -3,3 +3,10 @@ Week05_06/.env
 Week05_06/.venv
 Week05_06/.vscode
 Week05_06/mlruns
+Week07/mlruns
+Week07/.venv
+Week08/.venv
+Week08/.airflow
+*.pyc
+*.pyo
+__pycache__/

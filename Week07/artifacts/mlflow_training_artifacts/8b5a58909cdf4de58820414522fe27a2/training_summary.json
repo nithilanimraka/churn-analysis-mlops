@@ -1,0 +1,18 @@
+{
+  "model_type": "XGboost",
+  "training_samples": 8068,
+  "test_samples": 1920,
+  "features_used": 10,
+  "training_time": 0.23724794387817383,
+  "model_path": "artifacts/models/churn_analysis.joblib",
+  "performance_metrics": {
+    "accuracy": 0.8380208333333333,
+    "precision": 0.6632653061224489,
+    "recall": 0.47911547911547914,
+    "f1": 0.5563480741797432,
+    "training_time_seconds": 0.23724794387817383,
+    "model_complexity": 100,
+    "max_depth": 10
+  },
+  "timestamp": "2025-09-22T12:07:20.229761"
+}

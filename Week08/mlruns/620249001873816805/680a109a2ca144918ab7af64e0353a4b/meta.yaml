@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/nithilathawalampitiya/Documents/ZuuCrew_ProdReady_ML_Course/Labs/Week08/mlruns/620249001873816805/680a109a2ca144918ab7af64e0353a4b/artifacts
+end_time: 1765298548306
+entry_point_name: ''
+experiment_id: '620249001873816805'
+lifecycle_stage: active
+run_id: 680a109a2ca144918ab7af64e0353a4b
+run_name: data pipeline pyspark | 2025-12-09 22:12:28
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1765298548284
+status: 3
+tags: []
+user_id: nithilathawalampitiya
