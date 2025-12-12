@@ -1,0 +1,14 @@
+[2025-12-12 13:35:42,412] INFO Registered `kafka:type=kafka.Log4jController` MBean (kafka.utils.Log4jControllerRegistration$)
+[2025-12-12 13:35:42,490] ERROR Exiting Kafka due to fatal exception (kafka.Kafka$)
+org.apache.kafka.common.config.ConfigException: Invalid value controller #KRaft mode for configuration process.roles: String must be one of: broker, controller
+	at org.apache.kafka.common.config.ConfigDef$ValidString.ensureValid(ConfigDef.java:1047) ~[kafka-clients-4.1.1.jar:?]
+	at org.apache.kafka.common.config.ConfigDef$ValidList.ensureValid(ConfigDef.java:1023) ~[kafka-clients-4.1.1.jar:?]
+	at org.apache.kafka.common.config.ConfigDef.parseValue(ConfigDef.java:540) ~[kafka-clients-4.1.1.jar:?]
+	at org.apache.kafka.common.config.ConfigDef.parse(ConfigDef.java:524) ~[kafka-clients-4.1.1.jar:?]
+	at org.apache.kafka.common.config.AbstractConfig.<init>(AbstractConfig.java:114) ~[kafka-clients-4.1.1.jar:?]
+	at org.apache.kafka.server.config.AbstractKafkaConfig.<init>(AbstractKafkaConfig.java:78) ~[kafka-server-4.1.1.jar:?]
+	at kafka.server.KafkaConfig.<init>(KafkaConfig.scala:156) ~[kafka_2.13-4.1.1.jar:?]
+	at kafka.server.KafkaConfig.<init>(KafkaConfig.scala:159) ~[kafka_2.13-4.1.1.jar:?]
+	at kafka.Kafka$.buildServer(Kafka.scala:65) ~[kafka_2.13-4.1.1.jar:?]
+	at kafka.Kafka$.main(Kafka.scala:75) [kafka_2.13-4.1.1.jar:?]
+	at kafka.Kafka.main(Kafka.scala) [kafka_2.13-4.1.1.jar:?]

@@ -6,6 +6,7 @@ Week05_06/mlruns
 Week07/mlruns
 Week07/.venv
 Week08/.venv
+Week09/.venv
 Week08/.airflow
 *.pyc
 *.pyo
